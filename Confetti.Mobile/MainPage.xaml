@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:confetti="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             x:Class="Confetti.Mobile.MainPage">
+
+    <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*">
+        <Label Grid.Row="0" Grid.Column="0" Text="DEFAULT" />
+        <Border Grid.Row="0" Grid.Column="0">
+            <confetti:SKConfettiView >
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem>
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+        <Label Grid.Row="0" Grid.Column="1" Text="COLORS" />
+
+        <Border Grid.Row="0" Grid.Column="1">
+
+            <confetti:SKConfettiView >
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem Colors="#FF0000,#0000FF">
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+        <Label Grid.Row="0" Grid.Column="2" Text="SHAPES" />
+        <Border Grid.Row="0" Grid.Column="2">
+            <confetti:SKConfettiView >
+                <confetti:SKConfettiView.Systems>
+                     <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem>
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                            <confetti:SKConfettiSystem.Shapes>
+                                <confetti:SKConfettiShapeCollection>
+                                    <confetti:SKConfettiCircleShape/>
+                                    <confetti:SKConfettiOvalShape/>
+                                </confetti:SKConfettiShapeCollection>
+                            </confetti:SKConfettiSystem.Shapes>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+        <Label Grid.Row="1" Grid.Column="0" Text="GRAVITY" />
+        <Border Grid.Row="1" Grid.Column="0">
+            <confetti:SKConfettiView>
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem Gravity="100,100">
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+        <Label Grid.Row="1" Grid.Column="1" Text="PHYSICS" />
+        <Border Grid.Row="1" Grid.Column="1">
+            <confetti:SKConfettiView>
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem>
+                            <confetti:SKConfettiSystem.Physics>
+                                <confetti:SKConfettiPhysicsCollection>
+                                    <confetti:SKConfettiPhysics>
+                                        <x:Arguments>
+                                            <x:Double>50</x:Double>
+                                            <x:Double>50</x:Double>
+                                        </x:Arguments>
+                                    </confetti:SKConfettiPhysics>
+                                </confetti:SKConfettiPhysicsCollection> 
+                            </confetti:SKConfettiSystem.Physics>
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+
+        <Label Grid.Row="1" Grid.Column="2" Text="SIDE" />
+        <Border Grid.Row="1" Grid.Column="2">
+            <confetti:SKConfettiView>
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem EmitterBounds="Left">
+
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+        <Label Grid.Row="2" Grid.Column="0" Text="BOTTOM" />
+        <Border Grid.Row="2" Grid.Column="0">
+            <confetti:SKConfettiView>
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem EmitterBounds="Bottom">
+
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+        <Label Grid.Row="2" Grid.Column="1" Text="Center" />
+        <Border Grid.Row="2" Grid.Column="1">
+            <confetti:SKConfettiView>
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem EmitterBounds="Center">
+
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+        <Label Grid.Row="2" Grid.Column="2" Text="Intense" />
+        <Border Grid.Row="2" Grid.Column="2">
+            <confetti:SKConfettiView>
+                <confetti:SKConfettiView.Systems>
+                    <confetti:SKConfettiSystemCollection>
+                        <confetti:SKConfettiSystem>
+
+                            <confetti:SKConfettiSystem.Emitter>
+                                <confetti:SKConfettiEmitter Duration = "99999" ParticleRate="1000"/>
+                            </confetti:SKConfettiSystem.Emitter>
+                        </confetti:SKConfettiSystem>
+                    </confetti:SKConfettiSystemCollection>
+                </confetti:SKConfettiView.Systems>
+            </confetti:SKConfettiView>
+        </Border>
+
+
+    </Grid>
+
+</ContentPage>
