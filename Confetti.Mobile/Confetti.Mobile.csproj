@@ -24,7 +24,7 @@
 		<ApplicationTitle>Confetti.Mobile</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.confetti.mobile</ApplicationId>
+		<ApplicationId>com.northcairn.confetti</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
