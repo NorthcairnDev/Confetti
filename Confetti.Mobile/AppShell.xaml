@@ -7,7 +7,7 @@
     Title="Confetti.Mobile">
 
     <ShellContent
-        Title="MAUI Confetti"
+        Title="SKConfettiView"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
